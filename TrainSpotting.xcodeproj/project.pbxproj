@@ -16,6 +16,7 @@
 		31A6208C1BF75134002B1D34 /* TrainSpottingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A6208B1BF75134002B1D34 /* TrainSpottingTests.swift */; };
 		31A620971BF75134002B1D34 /* TrainSpottingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A620961BF75134002B1D34 /* TrainSpottingUITests.swift */; };
 		31A620A51BF767EE002B1D34 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A620A41BF767EE002B1D34 /* ResultsViewController.swift */; };
+		B8C49AEF1BF8F1EF00D1FCBF /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C49AE81BF8EFFD00D1FCBF /* JSONJoy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 31A620701BF75134002B1D34;
 			remoteInfo = TrainSpotting;
+		};
+		B8C49AE71BF8EFFD00D1FCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8C49AE01BF8EFFD00D1FCBF /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B3E79B719D355CF006071F7;
+			remoteInfo = JSONJoy;
+		};
+		B8C49AE91BF8EFFD00D1FCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8C49AE01BF8EFFD00D1FCBF /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B3E79C219D355CF006071F7;
+			remoteInfo = JSONJoyTests;
+		};
+		B8C49AEB1BF8EFFD00D1FCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8C49AE01BF8EFFD00D1FCBF /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958022E19E6ED8E003C8218;
+			remoteInfo = JSONJoyOSX;
+		};
+		B8C49AED1BF8EFFD00D1FCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8C49AE01BF8EFFD00D1FCBF /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958023819E6ED8E003C8218;
+			remoteInfo = JSONJoyOSXTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,6 +80,7 @@
 		31A620961BF75134002B1D34 /* TrainSpottingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainSpottingUITests.swift; sourceTree = "<group>"; };
 		31A620981BF75134002B1D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31A620A41BF767EE002B1D34 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		B8C49AE01BF8EFFD00D1FCBF /* JSONJoy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONJoy.xcodeproj; path = "JSONJoy-Swift/JSONJoy.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C49AEF1BF8F1EF00D1FCBF /* JSONJoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +112,7 @@
 		31A620681BF75134002B1D34 = {
 			isa = PBXGroup;
 			children = (
+				B8C49AE01BF8EFFD00D1FCBF /* JSONJoy.xcodeproj */,
 				31A620731BF75134002B1D34 /* TrainSpotting */,
 				31A6208A1BF75134002B1D34 /* TrainSpottingTests */,
 				31A620951BF75134002B1D34 /* TrainSpottingUITests */,
@@ -129,6 +161,17 @@
 				31A620981BF75134002B1D34 /* Info.plist */,
 			);
 			path = TrainSpottingUITests;
+			sourceTree = "<group>";
+		};
+		B8C49AE11BF8EFFD00D1FCBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8C49AE81BF8EFFD00D1FCBF /* JSONJoy.framework */,
+				B8C49AEA1BF8EFFD00D1FCBF /* JSONJoyTests.xctest */,
+				B8C49AEC1BF8EFFD00D1FCBF /* JSONJoy.framework */,
+				B8C49AEE1BF8EFFD00D1FCBF /* JSONJoyOSXTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +267,12 @@
 			mainGroup = 31A620681BF75134002B1D34;
 			productRefGroup = 31A620721BF75134002B1D34 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B8C49AE11BF8EFFD00D1FCBF /* Products */;
+					ProjectRef = B8C49AE01BF8EFFD00D1FCBF /* JSONJoy.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				31A620701BF75134002B1D34 /* TrainSpotting */,
@@ -232,6 +281,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B8C49AE81BF8EFFD00D1FCBF /* JSONJoy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONJoy.framework;
+			remoteRef = B8C49AE71BF8EFFD00D1FCBF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8C49AEA1BF8EFFD00D1FCBF /* JSONJoyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSONJoyTests.xctest;
+			remoteRef = B8C49AE91BF8EFFD00D1FCBF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8C49AEC1BF8EFFD00D1FCBF /* JSONJoy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONJoy.framework;
+			remoteRef = B8C49AEB1BF8EFFD00D1FCBF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8C49AEE1BF8EFFD00D1FCBF /* JSONJoyOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSONJoyOSXTests.xctest;
+			remoteRef = B8C49AED1BF8EFFD00D1FCBF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		31A6206F1BF75134002B1D34 /* Resources */ = {
@@ -495,6 +575,7 @@
 				31A6209D1BF75134002B1D34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31A6209E1BF75134002B1D34 /* Build configuration list for PBXNativeTarget "TrainSpottingTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +584,7 @@
 				31A620A01BF75134002B1D34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31A620A11BF75134002B1D34 /* Build configuration list for PBXNativeTarget "TrainSpottingUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +593,7 @@
 				31A620A31BF75134002B1D34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
