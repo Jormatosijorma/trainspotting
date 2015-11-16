@@ -20,7 +20,16 @@ class ResultsViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib
 
         self.edgesForExtendedLayout = UIRectEdge.None
+        NSLog(fromTextToPass)
         NSLog(toTextToPass)
+
+        var date: String {
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
+            return dateFormatter.stringFromDate(dateToPass)
+        }
+
+        NSLog(date)
     }
 
     override func didReceiveMemoryWarning() {
