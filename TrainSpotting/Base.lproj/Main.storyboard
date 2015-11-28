@@ -19,18 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Minne" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-gX-Lqf">
-                                <rect key="frame" x="150" y="154" width="300" height="30"/>
+                                <rect key="frame" x="20" y="154" width="560" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AEK-9k-7nY">
-                                <rect key="frame" x="20" y="192" width="560" height="216"/>
-                                <animations/>
-                                <date key="date" timeIntervalSinceReferenceDate="469193496.70747799">
-                                    <!--2015-11-14 11:31:36 +0000-->
-                                </date>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0E-2j-OCW">
                                 <rect key="frame" x="20" y="513" width="560" height="30"/>
                                 <animations/>
@@ -40,23 +33,31 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mistä" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nJX-rL-dC4">
-                                <rect key="frame" x="150" y="116" width="300" height="30"/>
+                                <rect key="frame" x="20" y="116" width="560" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AEK-9k-7nY">
+                                <rect key="frame" x="20" y="236" width="560" height="216"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="469193496.70747799">
+                                    <!--2015-11-14 11:31:36 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="fi_FI"/>
+                            </datePicker>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="nJX-rL-dC4" secondAttribute="leading" constant="-130" id="ErH-Zt-g4F"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="nJX-rL-dC4" secondAttribute="leading" id="ErH-Zt-g4F"/>
                             <constraint firstItem="i2k-gX-Lqf" firstAttribute="top" secondItem="nJX-rL-dC4" secondAttribute="bottom" constant="8" id="GQ4-T9-3oq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AEK-9k-7nY" secondAttribute="trailing" id="HRz-xQ-jf1"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="i2k-gX-Lqf" secondAttribute="leading" constant="-130" id="LpD-2J-9ym"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="i2k-gX-Lqf" secondAttribute="leading" id="LpD-2J-9ym"/>
                             <constraint firstItem="nJX-rL-dC4" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="52" id="Mu9-To-4Dr"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="E0E-2j-OCW" secondAttribute="bottom" constant="8" symbolic="YES" id="RWo-9N-H1f"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="i2k-gX-Lqf" secondAttribute="trailing" constant="130" id="VVN-RP-cwO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nJX-rL-dC4" secondAttribute="trailing" constant="130" id="b8N-Qw-h8B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i2k-gX-Lqf" secondAttribute="trailing" id="VVN-RP-cwO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nJX-rL-dC4" secondAttribute="trailing" id="b8N-Qw-h8B"/>
                             <constraint firstAttribute="leadingMargin" secondItem="E0E-2j-OCW" secondAttribute="leading" id="hwo-C2-Ma5"/>
                             <constraint firstItem="AEK-9k-7nY" firstAttribute="top" secondItem="i2k-gX-Lqf" secondAttribute="bottom" constant="52" id="nbE-xN-QJ7"/>
                             <constraint firstAttribute="leadingMargin" secondItem="AEK-9k-7nY" secondAttribute="leading" id="puo-T4-dKg"/>
