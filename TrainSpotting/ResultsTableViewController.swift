@@ -21,6 +21,7 @@ class ResultsTableViewController: UITableViewController {
         return dateFormatter.stringFromDate(dateToPass)
     }
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,7 +40,8 @@ class ResultsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("resultID") as UITableViewCell!
-        cell.textLabel!.text = date
+        cell.textLabel!.text = "test"
+
         return cell
     }
 

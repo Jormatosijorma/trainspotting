@@ -10,7 +10,6 @@
 		6B3E79D219D35663006071F7 /* JSONJoy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3E79D019D35663006071F7 /* JSONJoy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B3E79D319D35663006071F7 /* JSONJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E79D119D35663006071F7 /* JSONJoy.swift */; };
 		6B3E79DA19D35696006071F7 /* JSONJoyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E79D819D35696006071F7 /* JSONJoyTests.swift */; };
-		B8328A2B1C0C5C8700ACEE21 /* apiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8328A2A1C0C5C8700ACEE21 /* apiManager.swift */; settings = {ASSET_TAGS = (); }; };
 		D958023919E6ED8E003C8218 /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D958022E19E6ED8E003C8218 /* JSONJoy.framework */; };
 		D958024719E6EDFB003C8218 /* JSONJoy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3E79D019D35663006071F7 /* JSONJoy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D958024819E6EE06003C8218 /* JSONJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E79D119D35663006071F7 /* JSONJoy.swift */; };
@@ -35,7 +34,6 @@
 		6B3E79D419D3566C006071F7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		6B3E79D719D35696006071F7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B3E79D819D35696006071F7 /* JSONJoyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONJoyTests.swift; sourceTree = "<group>"; };
-		B8328A2A1C0C5C8700ACEE21 /* apiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiManager.swift; sourceTree = "<group>"; };
 		D958022E19E6ED8E003C8218 /* JSONJoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONJoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D958023819E6ED8E003C8218 /* JSONJoyOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONJoyOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +74,6 @@
 		6B3E79AD19D355CF006071F7 = {
 			isa = PBXGroup;
 			children = (
-				B8328A2A1C0C5C8700ACEE21 /* apiManager.swift */,
 				6B3E79B919D355CF006071F7 /* JSONJoy */,
 				6B3E79D619D35696006071F7 /* Tests */,
 				6B3E79B819D355CF006071F7 /* Products */,
@@ -295,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8328A2B1C0C5C8700ACEE21 /* apiManager.swift in Sources */,
 				6B3E79D319D35663006071F7 /* JSONJoy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
