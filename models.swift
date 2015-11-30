@@ -17,8 +17,8 @@ struct Trains: JSONJoy {
     
     init (_ decoder: JSONDecoder) {
         trains = Array<Train>()
-        for trainDecoder in decoder {
-            trains.append(Train(trainDecoder))
+        for trainDecoder in decoder.array! {
+            trains?.append(Train(trainDecoder))
         }
     }
 }

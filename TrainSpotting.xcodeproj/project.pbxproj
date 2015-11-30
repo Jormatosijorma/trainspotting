@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		313F431E1C0C436C00DE45B8 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313F431D1C0C436C00DE45B8 /* ResultsTableViewController.swift */; };
-		313F432C1C0C6CA200DE45B8 /* apiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313F432B1C0C6CA200DE45B8 /* apiManager.swift */; };
 		313F432E1C0C785600DE45B8 /* apiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313F432D1C0C785600DE45B8 /* apiManager.swift */; };
 		31A620751BF75134002B1D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A620741BF75134002B1D34 /* AppDelegate.swift */; };
 		31A620771BF75134002B1D34 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A620761BF75134002B1D34 /* FirstViewController.swift */; };
@@ -69,7 +68,6 @@
 
 /* Begin PBXFileReference section */
 		313F431D1C0C436C00DE45B8 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
-		313F432B1C0C6CA200DE45B8 /* apiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = apiManager.swift; path = ../../../../.Trash/apiManager.swift; sourceTree = "<group>"; };
 		313F432D1C0C785600DE45B8 /* apiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiManager.swift; sourceTree = "<group>"; };
 		31A620711BF75134002B1D34 /* TrainSpotting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainSpotting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A620741BF75134002B1D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				31A620741BF75134002B1D34 /* AppDelegate.swift */,
-				313F432B1C0C6CA200DE45B8 /* apiManager.swift */,
 				B8328A231C0C4C1D00ACEE21 /* models.swift */,
 				313F432D1C0C785600DE45B8 /* apiManager.swift */,
 				31A620761BF75134002B1D34 /* FirstViewController.swift */,
@@ -357,7 +354,6 @@
 				313F432E1C0C785600DE45B8 /* apiManager.swift in Sources */,
 				B8328A241C0C4C1D00ACEE21 /* models.swift in Sources */,
 				31A620791BF75134002B1D34 /* SecondViewController.swift in Sources */,
-				313F432C1C0C6CA200DE45B8 /* apiManager.swift in Sources */,
 				31A620751BF75134002B1D34 /* AppDelegate.swift in Sources */,
 				31A620771BF75134002B1D34 /* FirstViewController.swift in Sources */,
 				313F431E1C0C436C00DE45B8 /* ResultsTableViewController.swift in Sources */,

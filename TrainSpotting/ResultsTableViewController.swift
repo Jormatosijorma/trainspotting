@@ -17,7 +17,7 @@ class ResultsTableViewController: UITableViewController {
 
     var date: String {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sss'Z'"
         return dateFormatter.stringFromDate(dateToPass)
     }
 
@@ -31,6 +31,7 @@ class ResultsTableViewController: UITableViewController {
         NSLog(fromTextToPass)
         NSLog(toTextToPass)
         NSLog(date)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,8 +41,13 @@ class ResultsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("resultID") as UITableViewCell!
-        cell.textLabel!.text = "test"
-
+        //cell.textLabel!.text = "test"
+        ApiManager.getSchedule(date, departureStation: fromTextToPass, arrivalStation: toTextToPass, onComplete: { trains, error in
+            for train in trains!.trains! {
+                NSLog("\(train.trainType)")
+                cell.textLabel!.text = ("\(train.trainType)\(train.trainNumber)")
+            }
+        })
         return cell
     }
 
