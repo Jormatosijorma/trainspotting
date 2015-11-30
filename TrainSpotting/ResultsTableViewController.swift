@@ -15,6 +15,12 @@ class ResultsTableViewController: UITableViewController {
     var toTextToPass: String!
     var fromTextToPass: String!
 
+    var date: String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
+        return dateFormatter.stringFromDate(dateToPass)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,13 +29,6 @@ class ResultsTableViewController: UITableViewController {
         self.edgesForExtendedLayout = UIRectEdge.None
         NSLog(fromTextToPass)
         NSLog(toTextToPass)
-
-        var date: String {
-            let dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
-            return dateFormatter.stringFromDate(dateToPass)
-        }
-
         NSLog(date)
     }
 
@@ -38,10 +37,9 @@ class ResultsTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func tableView(tableView: UITableView,
-        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "resultID")
-        cell.textLabel!.text = "test"
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("resultID") as UITableViewCell!
+        cell.textLabel!.text = date
         return cell
     }
 
