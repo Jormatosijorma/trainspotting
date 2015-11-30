@@ -8,6 +8,21 @@
 
 import JSONJoy
 
+struct Trains: JSONJoy {
+    var trains: Array<Train>?
+    
+    init () {
+        
+    }
+    
+    init (_ decoder: JSONDecoder) {
+        trains = Array<Train>()
+        for trainDecoder in decoder {
+            trains.append(Train(trainDecoder))
+        }
+    }
+}
+
 struct Train: JSONJoy {
     var trainNumber: Int?
     var operatorShortCode: String?

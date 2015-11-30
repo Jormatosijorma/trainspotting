@@ -21,8 +21,8 @@ class ApiManager {
         task.resume()
     }
 
-    class func getSchedule(departureDate: String, departureStation: String, arrivalStation: String, onComplete: (Train?, NSError?) -> Void) {
-        httpGet("/schedule?departure_date=\(departureDate)&departure_station=\(departureStation)&arrival_station=\(arrivalStation)", onComplete: { data, error in onComplete(Train(JSONDecoder(data)), error)
+    class func getSchedule(departureDate: String, departureStation: String, arrivalStation: String, onComplete: (Trains?, NSError?) -> Void) {
+        httpGet("/schedule?departure_date=\(departureDate)&departure_station=\(departureStation)&arrival_station=\(arrivalStation)", onComplete: { data, error in onComplete(Trains(JSONDecoder(data)), error)
         })
     }
 }
