@@ -1,14 +1,15 @@
 //
-//  ResultsViewController.swift
+//  ResultsTableViewController.swift
 //  TrainSpotting
 //
-//  Created by Joonas Maliniemi on 14.11.2015.
+//  Created by Joonas Maliniemi on 30.11.2015.
 //  Copyright © 2015 Tampereen ammattikorkeakoulu Oy. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ResultsViewController: UIViewController {
+class ResultsTableViewController: UITableViewController {
 
     var dateToPass: NSDate!
     var toTextToPass: String!
@@ -36,5 +37,15 @@ class ResultsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    override func tableView(tableView: UITableView,
+        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "resultID")
+        cell.textLabel!.text = "test"
+        return cell
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
 }

@@ -27,13 +27,8 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*@IBAction func datePickerAction(sender: AnyObject) {
-
-        let date = datePicker.date
-    }*/
-
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let resultsViewController = segue.destinationViewController as! ResultsViewController
+        let resultsViewController = segue.destinationViewController as! ResultsTableViewController
         resultsViewController.dateToPass = self.datePicker.date
         resultsViewController.fromTextToPass = self.fromTextField.text
         resultsViewController.toTextToPass = self.toTextField.text

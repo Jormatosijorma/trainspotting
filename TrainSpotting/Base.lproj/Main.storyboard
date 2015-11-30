@@ -29,7 +29,7 @@
                                 <animations/>
                                 <state key="normal" title="Find"/>
                                 <connections>
-                                    <segue destination="HHu-j5-Tb7" kind="show" id="wkT-i0-6gD"/>
+                                    <segue destination="670-dC-gun" kind="show" id="MVh-mI-KKZ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mistä" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nJX-rL-dC4">
@@ -75,25 +75,36 @@
             </objects>
             <point key="canvasLocation" x="1562" y="-320"/>
         </scene>
-        <!--Results View Controller-->
-        <scene sceneID="nRM-iL-LwX">
+        <!--Results Table View Controller-->
+        <scene sceneID="lha-3t-kg1">
             <objects>
-                <viewController id="HHu-j5-Tb7" customClass="ResultsViewController" customModule="TrainSpotting" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WYx-F1-ZGj"/>
-                        <viewControllerLayoutGuide type="bottom" id="QW2-DO-9Ch"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="adV-pM-i6F">
+                <tableViewController id="670-dC-gun" customClass="ResultsTableViewController" customModule="TrainSpotting" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wn7-V4-ozv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Cgd-oN-spP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HKF-JW-UNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultID" id="EmL-sP-u1T">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EmL-sP-u1T" id="k6S-1D-LjU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="670-dC-gun" id="jUw-hZ-7oH"/>
+                            <outlet property="delegate" destination="670-dC-gun" id="1le-8I-aRr"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CkW-kg-0VU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2396" y="-629"/>
+            <point key="canvasLocation" x="2396" y="84"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
